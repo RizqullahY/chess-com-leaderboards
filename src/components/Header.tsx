@@ -5,13 +5,13 @@ export function Header() {
   const links = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/RizqullahY/chess-com-leaderboards',
       icon: Github,
       description: 'View source code'
     },
     {
       name: 'PublicAPI.dev',
-      url: 'https://publicapi.dev',
+      url: 'https://publicapi.dev/chess-com-api',
       icon: ExternalLink,
       description: 'Discover public APIs'
     },

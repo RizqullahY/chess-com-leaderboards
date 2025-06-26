@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Crown, Trophy, Medal, User, Calendar, MapPin, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import { Crown, Trophy, Medal, User, Calendar, MapPin, Clock, ChevronDown } from 'lucide-react';
 import { Player } from '../types/chess';
 import { countryToFlag, formatLastOnline } from '../utils/countryToFlag';
 import { usePlayerDetails } from '../hooks/useChessApi';
@@ -192,7 +192,7 @@ export function PlayerCard({ player, rank, variant = 'grid' }: PlayerCardProps) 
 
   return (
     <motion.div
-      className="bg-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700/50 hover:border-amber-400/30 transition-all duration-300 group cursor-pointer overflow-hidden"
+      className=" bg-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700/50 hover:border-amber-400/30 transition-all duration-300 group cursor-pointer overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Player } from '../types/chess';
 import { PlayerCard } from './PlayerCard';
-import { LoadingSpinner, PlayerSkeleton } from './LoadingSpinner';
+import { PlayerSkeleton } from './LoadingSpinner';
 
 interface LeaderboardGridProps {
   players: Player[];
@@ -35,7 +35,7 @@ export function LeaderboardGrid({ players, category }: LeaderboardGridProps) {
       setPage(nextPage);
       setLoading(false);
     }, 500); // Simulate loading delay
-  }, [loading, visiblePlayers.length, players.length, page, players]);
+  }, [loading, visiblePlayers.length, page, players]);
 
   // Intersection Observer for infinite scroll
   useEffect(() => {
