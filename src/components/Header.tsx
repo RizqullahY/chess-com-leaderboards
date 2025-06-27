@@ -20,6 +20,12 @@ export function Header() {
       url: 'https://chess.com',
       icon: Crown,
       description: 'Play chess online'
+    },
+    {
+      name: 'bolt.new',
+      url: 'https://bolt.new',
+      iconImage: '/white_circle_360x360.svg',
+      description: 'Open a new Bolt workspace'
     }
   ];
 
@@ -58,7 +64,15 @@ export function Header() {
                   whileTap={{ scale: 0.95 }}
                   title={link.description}
                 >
-                  <Icon className="w-4 h-4" />
+                  {Icon ? (
+                    <Icon className="w-4 h-4" />
+                  ) : (
+                    <img
+                      src={link.iconImage}
+                      alt={link.name}
+                      className="w-4 h-4 rounded-full"
+                    />
+                  )}
                   <span className="hidden sm:inline text-sm font-medium">
                     {link.name}
                   </span>
