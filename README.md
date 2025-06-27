@@ -12,7 +12,7 @@ Visit the live demo here: [https://chess-com-leaderboards.netlify.app/](https://
 
 ## 🧩 Features
 
-* **Blitz, Bullet, Rapid, Daily, Daily960** – shows the top 5 players for each rating category.
+* **Blitz, Bullet, Rapid, Daily, Daily960** – shows the top 3 players for each rating category.
 * **Puzzle Rush (5 min)** – displays top scorers for Puzzle Rush.
 * **Puzzle Battle** – ranking based on Puzzle Battle high scores.
 * **Lessons** – leaderboard for lesson completions or high scores.
